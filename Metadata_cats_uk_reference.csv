@@ -1,0 +1,17 @@
+﻿variable,class,description
+tag_id,character,"A unique identifier for the tag, provided by the data owner. If the data owner does not provide a tag ID, an internal Movebank tag identifier may sometimes be shown."
+animal_id,character,"An individual identifier for the animal, provided by the data owner. If the data owner does not provide an Animal ID, an internal Movebank animal identifier is sometimes shown."
+animal_taxon,character,"The scientific name of the species on which the tag was deployed, as defined by the Integrated Taxonomic Information System (ITIS, www.itis.gov). If the species name can not be provided, this should be the lowest level taxonomic rank that can be determined and that is used in the ITIS taxonomy."
+deploy_on_date,double,The timestamp when the tag deployment started.
+deploy_off_date,double,The timestamp when the tag deployment ended.
+hunt,logical,Whether the animal was allowed to hunt.
+prey_p_month,double,Approximate number of prey caught by the animal per month.
+animal_reproductive_condition,character,The reproductive condition of the animal at the beginning of the deployment.
+animal_sex,character,"The sex of the animal, as ""m"" or ""f""."
+hrs_indoors,double,The average number of hours which the animal was indoors per day.
+n_cats,double,The number of cats in the house.
+food_dry,logical,Whether the cat was fed dry food.
+food_wet,logical,Whether the cat was fed wet food.
+food_other,logical,Whether the cat was fed other food.
+study_site,character,"A location such as the deployment site or colony, or a location-related group such as the herd or pack name."
+age_years,double,"The age of the animal at the beginning of the deployment, in years. ""0"" indicates that the animal was < 1 year old."

@@ -1,0 +1,12 @@
+﻿variable,class,description
+tag_id,character,"A unique identifier for the tag, provided by the data owner. If the data owner does not provide a tag ID, an internal Movebank tag identifier may sometimes be shown."
+event_id,double,"An identifier for the set of values associated with each event, i.e. sensor measurement. A unique event ID is assigned to every time-location or other time-measurement record in Movebank. If multiple measurements are included within a single row of a data file, they will share an event ID. If users import the same sensor measurement to Movebank multiple times, a separate event ID will be assigned to each."
+visible,logical,"Determines whether an event is visible on the Movebank map. Values are calculated automatically, with TRUE indicating the event has not been flagged as an outlier by algorithm_marked_outlier, import_marked_outlier or manually_marked_outlier, or that the user has overridden the results of these outlier attributes using manually_marked_valid = TRUE. Allowed values are TRUE or FALSE."
+timestamp,double,The date and time corresponding to a sensor measurement or an estimate derived from sensor measurements.
+location_long,double,"The geographic longitude of the location as estimated by the sensor. Positive values are east of the Greenwich Meridian, negative values are west of it."
+location_lat,double,"The geographic longitude of the location as estimated by the sensor. Positive values are east of the Greenwich Meridian, negative values are west of it."
+ground_speed,double,"The estimated ground speed provided by the sensor or calculated between consecutive locations. Units are reportedly m/s, which indicates that there is likely a problem with this data (either the units were reported erroneously or their is an issue with the sensor data)."
+height_above_ellipsoid,double,"The estimated height above the ellipsoid, typically estimated by the tag. Units: meters"
+algorithm_marked_outlier,logical,Identifies events marked as outliers using a user-selected filter algorithm in Movebank. Outliers have the value TRUE.
+manually_marked_outlier,logical,"Identifies events flagged manually as outliers, typically using the Event Editor in Movebank, and may also include outliers identified using other methods. Outliers have the value TRUE."
+study_name,character,The name of the study in Movebank.
